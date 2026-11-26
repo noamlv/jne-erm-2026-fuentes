@@ -56,3 +56,23 @@ h3 a{text-decoration:none}h3 a:after{content:"";position:absolute;inset:0}articl
 }
 .mast+main > #fuentes:first-child{margin-top:24px}
 .regreso{display:inline-block;margin-top:24px;color:var(--rojo);font-size:14px;text-underline-offset:3px}
+
+/* Composición de la portada ilustrada. */
+.solo-portada.tema-editorial .kicker {
+  position: relative;
+  top: clamp(-30px, -2.3vh, -8px);
+}
+@media (min-width: 681px) {
+  .solo-portada.tema-editorial .hero {
+    grid-template-columns: minmax(0, 0.84fr) minmax(0, 1.16fr);
+    column-gap: 2%;
+  }
+}
+@media (max-width: 680px) {
+  .solo-portada.tema-editorial .arte {
+    width: calc(100% + 20px);
+    max-width: none;
+    margin-inline: -10px;
+  }
+  .solo-portada.tema-editorial .arte img { max-height: none; }
+}
