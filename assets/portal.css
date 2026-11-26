@@ -37,3 +37,12 @@ h3 a{text-decoration:none}h3 a:after{content:"";position:absolute;inset:0}.flech
 @media(max-width:900px){.wrap{width:calc(100% - 48px)}h1{font-size:clamp(44px,5.7vw,61px)}.catalogo li{padding:0 15px}.fuente{font-size:10px}.periodo{font-size:11px}}
 @media(max-width:680px){.wrap{width:calc(100% - 36px)}.mast{min-height:65px}.identidad img{width:42px;height:40px}.identidad span{font-size:13px;max-width:125px}.hero{grid-template-columns:1fr;gap:18px;padding:25px 0 22px}.kicker{font-size:10px}h1{font-size:clamp(42px,9.7vw,62px);max-width:16ch;margin:11px 0 12px}.boton{margin-top:16px}.arte{width:100%;max-width:500px;margin:auto}.arte img{max-height:260px;object-fit:contain}.sectionhead{align-items:start;flex-direction:column;gap:7px;padding:16px 0}.catalogo{display:block;padding:0}.catalogo li,.catalogo li:nth-child(n){padding:15px 0;margin:0;border-left:0;border-top:1px solid var(--linea)}article{min-height:0}.periodo{padding-top:8px}.descripcion{max-width:55ch}h3{margin:5px 0 6px}.flecha{top:20px}.grafico{padding:16px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* En los portales con portada e índice separados, la URL conserva la vista elegida. */
+.indice-por-enlace .hero{border-bottom:2px solid var(--tinta)}
+.indice-por-enlace .edicion i,.indice-por-enlace .flecha{display:none}
+.indice-por-enlace h3{padding-right:0}
+.indice-por-enlace #fuentes:not(:target){display:none}
+.indice-por-enlace main:has(> #fuentes:target) > .hero{display:none}
+.indice-por-enlace #fuentes:target{margin-top:24px}
+.regreso{display:inline-block;margin-top:24px;color:var(--rojo);font-size:14px;text-underline-offset:3px}
