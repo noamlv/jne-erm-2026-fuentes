@@ -3,22 +3,29 @@
   "institucion": "Jurado Nacional de Elecciones",
   "lugar": "Perú",
   "anio": 2026,
-  "fecha": "2026-11-25",
-  "fecha_visible": "25 de noviembre de 2026",
+  "fecha": "2026-11-26",
+  "fecha_visible": "26 de noviembre de 2026",
   "proceso": "Elecciones regionales y municipales 2026",
   "titulo": "Amenazas y extorsión contra candidatos",
-  "bajada": "Riesgos electorales, alertas contra candidaturas y denuncias policiales por extorsión en el Perú.",
+  "bajada": "Victimización y denuncias por extorsión, alertas contra candidaturas y riesgos electorales en el Perú.",
   "imagen": "campana-1250.webp",
   "imagen_movil": "campana-700.webp",
   "alt": "Ilustración de una candidata ante los micrófonos, un teléfono con un mensaje y un afiche de campaña.",
   "mapa": "peru.webp",
   "fuentes": [
     {
-      "archivo": "prevencope.html",
-      "fuente": "JNE / PREVENCOPE",
-      "titulo": "Riesgos electorales",
-      "descripcion": "Riesgos registrados en las elecciones generales y en las ERM de 2026.",
-      "periodo": "Corte al 17 de noviembre de 2026"
+      "archivo": "enapres.html",
+      "fuente": "INEI / ENAPRES",
+      "titulo": "Victimización por extorsión",
+      "descripcion": "Personas que sufrieron extorsión o un intento de extorsión en el Perú urbano.",
+      "periodo": "2012 a 2025"
+    },
+    {
+      "archivo": "denuncias-sidpol.html",
+      "fuente": "MININTER / PNP / SIDPOL",
+      "titulo": "Denuncias por extorsión",
+      "descripcion": "Denuncias policiales de la población general, por mes y territorio.",
+      "periodo": "Enero de 2019 a octubre de 2026"
     },
     {
       "archivo": "alertas-jne.html",
@@ -28,18 +35,18 @@
       "periodo": "Marzo a noviembre de 2026"
     },
     {
-      "archivo": "denuncias-sidpol.html",
-      "fuente": "MININTER / SIDPOL",
-      "titulo": "Denuncias por extorsión",
-      "descripcion": "Denuncias policiales de la población general, por mes y territorio.",
-      "periodo": "Enero de 2019 a octubre de 2026"
+      "archivo": "prevencope.html",
+      "fuente": "JNE / PREVENCOPE",
+      "titulo": "Riesgos electorales",
+      "descripcion": "Riesgos registrados en las elecciones generales y en las ERM de 2026.",
+      "periodo": "Corte al 17 de noviembre de 2026"
     }
   ],
   "serie": {
     "titulo": "Denuncias por extorsión",
     "periodo": "Enero a octubre de cada año",
     "unidad": "Denuncias únicas",
-    "fuente": "MININTER / SIDPOL",
+    "fuente": "MININTER / PNP / SIDPOL",
     "valores": [
       [
         2019,
