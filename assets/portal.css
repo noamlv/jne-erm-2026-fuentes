@@ -39,6 +39,20 @@ h3 a{text-decoration:none}h3 a:after{content:"";position:absolute;inset:0}articl
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 
-.solo-portada .hero{border-bottom:2px solid var(--tinta)}
+.solo-portada {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-bottom: clamp(12px, 2vh, 24px);
+}
+.solo-portada main { display: grid; }
+.solo-portada .hero {
+  align-content: center;
+  border-bottom: 2px solid var(--tinta);
+}
+@media (min-width: 901px) and (min-height: 690px) {
+  .solo-portada h1 { font-size: clamp(58px, 5.8vw, 90px); }
+}
 .mast+main > #fuentes:first-child{margin-top:24px}
 .regreso{display:inline-block;margin-top:24px;color:var(--rojo);font-size:14px;text-underline-offset:3px}
